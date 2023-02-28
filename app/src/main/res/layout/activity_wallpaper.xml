@@ -4,30 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WallpaperActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycle_view"
-        android:layout_margin="5dp"/>
+        android:id="@+id/wallpaper_image"
+        android:scaleType="centerCrop"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
+        android:id="@+id/fab_download"
         android:layout_height="wrap_content"
-        android:id="@+id/next_btn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="14dp"
-        android:src="@drawable/ic_next"/>
+        android:layout_margin="20dp"
+        android:src="@drawable/baseline_download_24"/>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
+        android:id="@+id/fab_wallpaper"
         android:layout_height="wrap_content"
-        android:id="@+id/prev_btn"
         android:layout_alignParentBottom="true"
-        android:layout_margin="14dp"
-        android:src="@drawable/ic_prev"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_wallpaper" />
 
 
 

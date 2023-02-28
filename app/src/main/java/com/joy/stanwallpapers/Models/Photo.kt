@@ -1,6 +1,6 @@
 package com.joy.stanwallpapers.Models
 
-class Photo {
+class Photo : java.io.Serializable {
 
 
     var id = 0

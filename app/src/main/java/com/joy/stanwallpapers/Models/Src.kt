@@ -1,6 +1,7 @@
 package com.joy.stanwallpapers.Models
 
-class Src {
+class Src : java.io.Serializable{
+
     var original: String? = null
     var large2x: String? = null
     var large: String? = null
