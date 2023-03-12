@@ -41,7 +41,7 @@ class WallpaperActivity : AppCompatActivity() {
             var downloadManager : DownloadManager? = null
             downloadManager = (getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager?)!!
 
-            val uri:Uri =Uri.parse(photo.src?.large  )
+            val uri:Uri =Uri.parse(photo.src?.original)
             val request:DownloadManager.Request = DownloadManager.Request(uri)
             request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI or  DownloadManager.Request.NETWORK_MOBILE).setAllowedOverRoaming(true).setTitle("wallpaper_"+photo.photographer).setMimeType("image/jpeg").setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED).setDestinationInExternalFilesDir(this , Environment.DIRECTORY_DOWNLOADS.toString(), "wallpaper_"+photo.photographer+".jpg")
             downloadManager.enqueue(request);
